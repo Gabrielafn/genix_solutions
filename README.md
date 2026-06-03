@@ -6,6 +6,7 @@
 <h2>✨ Funcionalidades</h2>
 🏠 Página inicial com identidade visual da empresa
 👥 Seção "Sobre Nós"
+💡 Seção Produtos
 🤝 Área de parceiros estratégicos
 ❓ Seção FAQ com perguntas frequentes
 📱 Links para redes sociais
@@ -42,6 +43,8 @@ Cor	Uso<br>
 Apresentação da empresa e slogan institucional.<br>
 <h3>👥 Sobre Nós</h3>
 Descrição da missão, visão e valores da Genix Solutions.<br>
+<h3>💡 Produtos </h3>
+Apresentação com carrossel dos produtos fictícios oferecidos pela empresa.<br>
 <h3>🤝 Parceiros</h3>
 Apresentação dos parceiros estratégicos fictícios da empresa.<br>
 <h3>❓ FAQ</h3>
