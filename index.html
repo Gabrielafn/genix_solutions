@@ -32,6 +32,15 @@
         h4 {
             color: rgb(0, 170, 255)
         }
+
+        .produto-img {
+            width: 80%;
+        }
+
+        .botao-carrossel {
+            background-color: rgb(20, 35, 70);
+            color: rgb(255, 196, 64);
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -50,6 +59,12 @@
             class="w3-bar-item w3-button w3-padding-large w3-hover-indigo w3-hover-text-amber w3-text-white">
             <i class="fa fa-user w3-xxlarge"></i>
             <p>SOBRE NÓS</p>
+        </a>
+        <!-- PRODUTOS -->
+        <a href="#produtos"
+            class="w3-bar-item w3-button w3-padding-large w3-hover-indigo w3-hover-text-amber w3-text-white">
+            <i class="fa fa-lightbulb-o w3-xxlarge"></i>
+            <p>Produtos</p>
         </a>
         <!-- Parceiros -->
         <a href="#parceiros"
@@ -113,6 +128,66 @@
             Solutions, cada projeto é uma oportunidade de unir inovação e estratégia para transformar ideias em
             soluções.
         </p>
+    </div>
+    <!-- Produtos -->
+    <div class="w3-padding-64 w3-content" id="produtos">
+        <h2 class="w3-text-white">Produtos</h2>
+        <hr style="width:200px; border-color:#FFC107;">
+        <div class="w3-display-container">
+            <div class="slides w3-center">
+                <img src="imagens/genix_cloud.png" class="produto-img">
+                <p>O Genix Cloud oferece uma infraestrutura em nuvem moderna, segura e escalável para empresas que
+                    buscam maior eficiência tecnológica. Com soluções de armazenamento, backup e hospedagem de sistemas,
+                    garante alta disponibilidade e proteção de dados. Sua arquitetura flexível acompanha o crescimento
+                    do negócio, reduzindo custos e simplificando a gestão de recursos digitais.</p>
+            </div>
+            <div class="slides w3-center">
+                <img src="imagens/genix_flow.png" class="produto-img">
+                <p>O Genix Flow foi desenvolvido para automatizar processos e otimizar rotinas corporativas. A
+                    plataforma integra setores, elimina tarefas repetitivas e aumenta a produtividade das equipes. Com
+                    fluxos inteligentes e personalizáveis, permite que a empresa concentre esforços em atividades
+                    estratégicas e na geração de resultados.</p>
+            </div>
+            <div class="slides w3-center">
+                <img src="imagens/genix_insight.png" class="produto-img">
+                <p>O Genix Insight transforma grandes volumes de dados em informações claras e estratégicas. Por meio de
+                    dashboards interativos, relatórios personalizados e indicadores em tempo real, auxilia gestores na
+                    tomada de decisões mais assertivas. A solução permite identificar oportunidades, acompanhar
+                    desempenho e impulsionar o crescimento do negócio.</p>
+            </div>
+            <div class="slides w3-center">
+                <img src="imagens/genix_shield.png" class="produto-img">
+                <p>O Genix Shield é uma solução completa de segurança digital voltada para a proteção de dados e
+                    sistemas corporativos. Com monitoramento contínuo, controle de acessos e prevenção de ameaças, ajuda
+                    a manter a integridade das informações da empresa. Sua abordagem proativa reduz riscos e fortalece a
+                    confiança no ambiente digital.</p>
+            </div>
+            <button class="w3-button w3-circle w3-card-4 w3-display-left botao-carrossel" style="left:7%" ;
+                onclick="plusDivs(-1)">
+                &#10094;
+            </button>
+            <button class="w3-button w3-circle w3-card-4 w3-display-right botao-carrossel" style="right:7%" ;
+                onclick="plusDivs(1)">
+                &#10095;
+            </button>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("slides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
     </div>
     <!-- Parceiros -->
     <div class="w3-padding-64 w3-content" id="parceiros">
